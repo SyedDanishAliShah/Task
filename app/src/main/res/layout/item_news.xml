@@ -1,0 +1,48 @@
+<!-- item_news.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/newsTitle"
+            android:scaleType="centerCrop"/>
+        <!-- Placeholder image, replace with actual image loading logic -->
+
+        <TextView
+            android:id="@+id/newsSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsImage"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:textSize="14sp"/>
+
+        <!-- Add other views as needed, such as buttons, etc. -->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
